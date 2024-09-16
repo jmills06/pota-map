@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>POTA Active Spots Map</title>
+    <!-- Include Leaflet CSS from CDN -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha384-kXJYDAE25W3O7Q7MoNFtYIwjdE6rKx58lcsYpCizY5H7nG3wUyJcFYdg0KDzzX+e"
+        crossorigin=""
+    />
+    <!-- Set the map container height -->
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+        /* Optional: Hide attribution and zoom controls */
+        .leaflet-control-attribution,
+        .leaflet-control-zoom {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Map Container -->
+    <div id="map"></div>
+
+    <!-- Include Leaflet JS from CDN -->
+    <script
+        src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha384-pE5gRSr+vhnl4xE1OBO8J9n4EW6Edn9r1IYZxhaANyc8V8X02SdcIHz0UydlYY5b"
+        crossorigin=""
+    ></script>
+
+    <!-- Include Your Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
